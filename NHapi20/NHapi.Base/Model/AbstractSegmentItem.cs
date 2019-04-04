@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NHapi.Base.Model
 {
-	internal class AbstractSegmentItem
+	public class AbstractSegmentItem
 	{
 		private List<IType> _fields = new List<IType>();
 		private Type _type;
