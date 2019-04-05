@@ -33,7 +33,7 @@ public class SUR_P09_FACILITY : AbstractGroup {
 	      this.add(typeof(SUR_P09_PRODUCT), true, true);
 	      this.add(typeof(PSH), true, false);
 	      this.add(typeof(SUR_P09_FACILITY_DETAIL), true, true);
-	      this.add(typeof(ED), true, false);
+	      //this.add(typeof(ED), true, false);
 	   } catch(HL7Exception e) {
 	      HapiLogFactory.GetHapiLog(GetType()).Error("Unexpected error creating SUR_P09_FACILITY - this is probably a bug in the source code generator.", e);
 	   }
