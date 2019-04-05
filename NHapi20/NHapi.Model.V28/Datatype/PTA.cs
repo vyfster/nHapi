@@ -34,7 +34,11 @@ public class PTA : AbstractType, IComposite{
 		data = new IType[4];
 		data[0] = new CWE(message,"Policy Type");
 		data[1] = new CWE(message,"Amount Class");
-		data[2] = new PTA(message,"Money or Percentage Quantity");
+
+		// this field has been removed http://www.hl7.eu/HL7v2x/v271/std271/ch02a.html#Heading356
+		// Not sure what data type this should be so have replaced it with the same data type
+		// used in the previous version.
+		data[2] = new ST(message,"Money or Percentage Quantity");
 		data[3] = new MOP(message,"Money or Percentage");
 	}
 

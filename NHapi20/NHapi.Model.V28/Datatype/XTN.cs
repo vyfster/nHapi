@@ -46,7 +46,7 @@ public class XTN : AbstractType, IComposite{
 	///</summary>
 	public XTN(IMessage message, string description) : base(message, description){
 		data = new IType[18];
-		data[0] = new XTN(message,"Telephone Number");
+		data[0] = new ST(message,"Telephone Number");
 		data[1] = new ID(message, 201,"Telecommunication Use Code");
 		data[2] = new ID(message, 202,"Telecommunication Equipment Type");
 		data[3] = new ST(message,"Communication Address");

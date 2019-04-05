@@ -40,9 +40,9 @@ public class XON : AbstractType, IComposite{
 		data = new IType[10];
 		data[0] = new ST(message,"Organization Name");
 		data[1] = new CWE(message,"Organization Name Type Code");
-		data[2] = new XON(message,"ID Number");
-		data[3] = new XON(message,"Identifier Check Digit");
-		data[4] = new XON(message,"Check Digit Scheme");
+		data[2] = new ST(message,"ID Number");
+		data[3] = new NM(message,"Identifier Check Digit");
+		data[4] = new ID(message, 61,"Check Digit Scheme");
 		data[5] = new HD(message,"Assigning Authority");
 		data[6] = new ID(message, 203,"Identifier Type Code");
 		data[7] = new HD(message,"Assigning Facility");

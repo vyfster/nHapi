@@ -34,7 +34,11 @@ public class RMC : AbstractType, IComposite{
 		data = new IType[4];
 		data[0] = new CWE(message,"Room Type");
 		data[1] = new CWE(message,"Amount Type");
-		data[2] = new RMC(message,"Coverage Amount");
+		
+		// this field has been removed http://www.hl7.eu/HL7v2x/v271/std271/ch02a.html#Heading384
+		// Not sure what data type this should be so have replaced it with the same data type
+		// used in the previous version.
+		data[2] = new ST(message,"Coverage Amount");
 		data[3] = new MOP(message,"Money or Percentage");
 	}
 

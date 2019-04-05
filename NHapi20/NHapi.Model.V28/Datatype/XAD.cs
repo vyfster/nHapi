@@ -62,7 +62,7 @@ public class XAD : AbstractType, IComposite{
 		data[8] = new CWE(message,"County/Parish Code");
 		data[9] = new CWE(message,"Census Tract");
 		data[10] = new ID(message, 465,"Address Representation Code");
-		data[11] = new XAD(message,"Address Validity Range");
+		data[11] = new ST(message,"Address Validity Range");
 		data[12] = new DTM(message,"Effective Date");
 		data[13] = new DTM(message,"Expiration Date");
 		data[14] = new CWE(message,"Expiration Reason");
